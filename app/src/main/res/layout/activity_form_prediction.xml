@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/panel_background"
+        android:elevation="4dp">
+
+        <!-- TextView para el título/indicación -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="por favor completa todos los campos"
+            android:textColor="#FFF"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:textSize="18sp"/>
+
+        <!-- Campos EditText para los datos requeridos -->
+        <!-- Repite este bloque para City, Region, Country, Air quality, Water pollution -->
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/editTextRegion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Region"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/editTextCountry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/editTextAirQuality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Air Quality"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+        <EditText
+            android:id="@+id/editTextWaterPollution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Water pollution"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botón de envío -->
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enviar"
+            android:background="@drawable/button_background"
+            android:textColor="#FFF"
+            android:layout_marginTop="16dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

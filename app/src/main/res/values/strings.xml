@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Parcial_III_IA</string>
+    <string name="login_title">Iniciar Sesion</string>
+    <string name="email">Ingrese correo</string>
+    <string name="password">Ingrese contraseña</string>
+    <string name="login">Entrar</string>
+</resources>
